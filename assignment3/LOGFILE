@@ -1,0 +1,33 @@
+Command 0 info: find /Users/jinhaochen -name *.c 
+Command 1 info:  wc
+Number of commands in the line : 2
+     PID               COMMAND
+     88030                find
+     88031                  wc
+waiting for pipeline termination...Process id 88030
+Process id 88031 finished with exit status 0
+waiting for pipeline termination...Process id 88031
+Process id 0 finished with exit status 0
+PID               COMMAND               EXIT STATUS
+88030                find                   0
+88031                  wc                   0
+Command 0 info: find /Users/jinhaochen -name *.c 
+Command 1 info:  wc 
+Command 2 info:  la
+Command 0 info: find /Users/jinhaochen -name *.c 
+Command 1 info:  wc 
+Command 2 info:  la
+Number of commands in the line : 3
+     PID               COMMAND
+     88050                find
+     88051                  wc
+     88052                  la
+waiting for pipeline termination...Process id 88050
+Terminating pipeline becuase process 88052 failed to execute
+Terminating process 88050 
+Terminating process 88051 
+Terminating process 88052 
+PID               COMMAND               EXIT STATUS
+88050                find                   0
+88051                  wc                   0
+88052                  la                 256
